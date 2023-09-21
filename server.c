@@ -18,9 +18,7 @@ void	ft_sig_handler(int sig)
 	static int	byte = 0;
 	static int	pos = 7;
 
-	if (sig == SIGUSR1)
-		byte += (0 << pos);
-	else
+	if (sig == SIGUSR2)
 		byte += (1 << pos);
 	if (pos == 0)
 	{
